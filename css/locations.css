@@ -1,0 +1,70 @@
+canvas {
+  display: block;
+}
+
+#preface-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 10vw;
+  height: 100vh;
+}
+
+#preface-text>h1 {
+  font-size: 3em;
+}
+
+#startbtn {
+  width: 100%;
+  background: inherit;
+  color: inherit;
+  padding: 1em 2em;
+  font-size: 2em;
+  border-color: var(--light-txt-color);
+  border-width: 7px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#author {
+  display: none;
+  text-decoration: none;
+  text-align: right;
+  color: inherit;
+}
+
+#author:visited {
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body {
+    background: var(--dark-bg-color);
+    color: var(--dark-txt-color);
+  }
+
+  #startbtn {
+    border-color: var(--dark-txt-color);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #preface-text>h1 {
+    font-size: 2em;
+  }
+
+  #startbtn {
+    font-size: 1em;
+  }
+
+  #author {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #preface-text>h1 {
+    font-size: 1.5em;
+  }
+}

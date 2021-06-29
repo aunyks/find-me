@@ -1,0 +1,25 @@
+:root {
+  --light-bg-color: white;
+  --light-txt-color: black;
+  --dark-bg-color: rgb(40, 40, 40);
+  --dark-txt-color: white;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background: var(--light-bg-color);
+  color: var(--light-txt-color);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body {
+    background: var(--dark-bg-color);
+    color: var(--dark-txt-color);
+  }
+}
